@@ -21,10 +21,8 @@ export default function Accordion({ question }) {
           )}
         </button>
       </div>
-      {isActive ? (
+      {isActive && (
         <p className='text-base text-grayishPurple py-6'>{question.answer}</p>
-      ) : (
-        ''
       )}
     </article>
   );
